@@ -1,0 +1,45 @@
+bleak==2.1.1
+cffi @ file:///D:/bld/cffi_1761202855497/work
+contourpy @ file:///C:/miniconda3/conda-bld/contourpy_1763643943275/work
+cycler @ file:///C:/Users/task_176606794786808/croot/cycler_1766068049869/work
+fonttools @ file:///C:/miniconda3/conda-bld/fonttools_1765445216921/work
+joblib @ file:///C:/Users/task_176786740206630/croot/joblib_1767868144069/work
+kiwisolver @ file:///C:/miniconda3/conda-bld/kiwisolver_1764159385651/work
+matplotlib==3.10.8
+mkl-service==2.5.2
+mkl_fft @ file:///C:/miniconda3/conda-bld/mkl_fft_1761592917950/work
+mkl_random @ file:///C:/miniconda3/conda-bld/mkl_random_1761593166070/work
+numpy @ file:///C:/Users/task_177073259650431/croot/numpy_and_numpy_base_1770732703057/work/dist/numpy-2.4.2-cp312-cp312-win_amd64.whl#sha256=695446e7c6dcc91b4f9b187a8af23d4024c9bd8d6a7398d7e5dc9f70c9d701d3
+packaging @ file:///C:/miniconda3/conda-bld/packaging_1761049137378/work
+pandas @ file:///C:/Users/task_177324583246542/croot/pandas_1773246097950/work
+pillow @ file:///D:/bld/pillow_1726075241382/work
+ply @ file:///home/conda/feedstock_root/build_artifacts/ply_1733239724146/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1733195786/work
+pygame @ file:///D:/bld/pygame_1727636579027/work
+pylsl==1.18.1
+pyparsing @ file:///C:/miniconda3/conda-bld/pyparsing_1763973902692/work
+PyQt6==6.7.1
+PyQt6_sip @ file:///C:/b/abs_28s7k4h_hl/croot/pyqt-split_1740498234166/work/pyqt_sip
+python-dateutil @ file:///C:/b/abs_3au_koqnbs/croot/python-dateutil_1716495777160/work
+pyxdf @ file:///home/conda/feedstock_root/build_artifacts/pyxdf_1774461975754/work
+scikit-learn @ file:///C:/b/abs_45qemhn4lg/croot/scikit-learn_1753427401078/work
+scipy @ file:///C:/Users/task_177325432223808/croot/scipy_1773254468529/work/dist/scipy-1.17.1-cp312-cp312-win_amd64.whl#sha256=9e52a540af6dfab956853adc7e87ea66341768053491750b0e193e4baa18feb1
+setuptools==80.10.2
+sip @ file:///D:/bld/sip_1759437922648/work
+six @ file:///C:/b/abs_149wuyuo1o/croot/six_1744271521515/work
+sounddevice @ file:///D:/bld/python-sounddevice_1769251727958/work
+threadpoolctl @ file:///C:/miniconda3/conda-bld/threadpoolctl_1764361791480/work
+tomli @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_tomli_1774492402/work
+tornado @ file:///C:/Users/task_176599264648662/croot/tornado_1765992760941/work
+typing_extensions==4.15.0
+tzdata @ file:///home/task_176829656558347/croot/python-tzdata_1768296637279/work
+wheel==0.46.3
+winrt-runtime==3.2.1
+winrt-Windows.Devices.Bluetooth==3.2.1
+winrt-Windows.Devices.Bluetooth.Advertisement==3.2.1
+winrt-Windows.Devices.Bluetooth.GenericAttributeProfile==3.2.1
+winrt-Windows.Devices.Enumeration==3.2.1
+winrt-Windows.Devices.Radios==3.2.1
+winrt-Windows.Foundation==3.2.1
+winrt-Windows.Foundation.Collections==3.2.1
+winrt-Windows.Storage.Streams==3.2.1

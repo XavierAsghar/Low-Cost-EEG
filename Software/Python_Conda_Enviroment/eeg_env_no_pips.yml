@@ -1,0 +1,15 @@
+name: eeg_env
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - numpy
+  - liblsl
+  - pyxdf
+  - pygame
+  - python-sounddevice
+prefix: C:\Users\xavie\anaconda3\envs\eeg_env

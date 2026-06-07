@@ -1,0 +1,29 @@
+# --- Altium Designer ---
+History/
+__Previews/
+*.SchDocPreview
+*.PcbDocPreview
+*.PrjPcbStructure
+OutJob/
+Project Logs*/
+
+# --- PlatformIO (ESP32 Firmware) ---
+.pio/
+.vscode/
+*.bin
+*.elf
+
+# --- Python (Host Script) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+build/
+dist/
+*.spec
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db

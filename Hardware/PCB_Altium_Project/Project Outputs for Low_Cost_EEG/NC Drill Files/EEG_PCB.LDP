@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\xavie\Documents\University Work\Year 4\FYP\Github Repo\Low-Cost-EEG\Hardware\PCB_Altium_Project\EEG_PCB.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=eeg_pcb-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=eeg_pcb-slotholes.txt|DrillLayers=gtl,g1,g2,gbl

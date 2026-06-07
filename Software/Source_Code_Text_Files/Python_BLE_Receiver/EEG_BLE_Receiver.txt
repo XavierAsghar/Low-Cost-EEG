@@ -1,0 +1,170 @@
+import asyncio
+import math
+from bleak import BleakScanner, BleakClient
+from pylsl import StreamInfo, StreamOutlet, local_clock
+
+SPS = 500.0
+DEVICE_NAME = "ESP32_EEG_DATA"
+CHARACTERISTIC_UUID = "cba1d466-344c-4be3-ab3f-189f80dd7518"
+scaleFactorUV = 4500000.0 / (24.0 * 8388608.0)
+
+info = StreamInfo('Custom_ESP32_EEG', 'EEG', 8, 500, 'float32', 'esp32_custom_mac_01')
+outlet = StreamOutlet(info)
+
+stop_event = asyncio.Event()
+packet_queue: asyncio.Queue = asyncio.Queue()
+
+# Shared state for the consumer
+class State:
+    expected_counter = None
+    drop_counter = 0
+    last_sample = None  # for display
+
+state = State()
+
+
+def notification_handler(sender, data: bytearray):
+    if len(data) == 224:
+        packet_queue.put_nowait(bytes(data))
+
+
+async def consumer_task():
+    while not stop_event.is_set():
+        try:
+            batch = await asyncio.wait_for(packet_queue.get(), timeout=0.5)
+        except asyncio.TimeoutError:
+            continue
+
+        # Decode all 8 samples into a chunk, then push once
+        chunk = []
+
+        for i in range(8):
+            packet = batch[i * 28 : (i + 1) * 28]
+            sample_counter = packet[0]
+
+            # Drop detection
+            if state.expected_counter is not None:
+                dropped = (sample_counter - state.expected_counter) % 256
+                if dropped > 0:
+                    state.drop_counter += dropped
+                    # Push current chunk, then insert NaNs
+                    if chunk:
+                        outlet.push_chunk(chunk)
+                        chunk = []
+                    nan_sample = [math.nan] * 8
+                    outlet.push_chunk([nan_sample] * dropped)
+            state.expected_counter = (sample_counter + 1) % 256
+
+            sample = []
+            # Unpack 8-channel sample
+            for ch in range(8):
+                off = 4 + ch * 3
+                raw = (packet[off] << 16) | (packet[off + 1] << 8) | packet[off + 2]
+                if raw >= 0x800000:
+                    raw -= 0x1000000
+                sample.append(raw * scaleFactorUV)
+            chunk.append(sample)
+            state.last_sample = (sample_counter, sample, packet)
+
+        if chunk:
+            outlet.push_chunk(chunk)
+
+
+async def display_task():
+    while not stop_event.is_set():
+        await asyncio.sleep(0.1) 
+        if state.last_sample is None:
+            continue
+        sample_counter, voltages, packet = state.last_sample
+        c1, c2, c3, c4, c5, c6, c7, c8 = voltages
+
+        status_word = (packet[1] << 16) | (packet[2] << 8) | packet[3]
+        p_stat = [(status_word >> (12 + j)) & 1 for j in range(8)]
+        ref_stat = (status_word >> 4) & 1
+
+        qsize = packet_queue.qsize()
+        dropped_str = f"TOTAL DROPPED : {state.drop_counter}  |  QUEUE DEPTH : {qsize}"
+        loff_str    = f"LEAD-OFF | 1: {p_stat[0]:7} | 2: {p_stat[1]:7} | 3: {p_stat[2]:7} | 4: {p_stat[3]:7} | 5: {p_stat[4]:7} | 6: {p_stat[5]:7} | 7: {p_stat[6]:7} | 8: {p_stat[7]:7} | REF: {ref_stat}"
+        volts_str   = f"VOLTAGES | 1: {c1:7.2f} | 2: {c2:7.2f} | 3: {c3:7.2f} | 4: {c4:7.2f} | 5: {c5:7.2f} | 6: {c6:7.2f} | 7: {c7:7.2f} | 8: {c8:7.2f}"
+        print(f"\033[H\033[J{dropped_str}\n{loff_str}\n{volts_str}", flush=True)
+
+
+
+
+async def main():
+    consumer = asyncio.create_task(consumer_task())
+    display = asyncio.create_task(display_task())
+
+    try:
+        while not stop_event.is_set():
+            print(f"\nScanning for {DEVICE_NAME}...")
+            
+            # Scan for device
+            esp32_device = await BleakScanner.find_device_by_name(DEVICE_NAME, timeout=5.0)
+                    
+            if not esp32_device:
+                print(f"Could not find {DEVICE_NAME}. Retrying in 2 seconds...")
+                await asyncio.sleep(2)
+                continue 
+
+            print(f"Found {DEVICE_NAME} at MAC Address: {esp32_device.address}")
+            print("Connecting...")
+
+            # Setup the disconnected event
+            disconnected_event = asyncio.Event()
+
+            # Pass the callback to BleakClient constructor 
+            async with BleakClient(esp32_device, disconnected_callback=lambda c: disconnected_event.set()) as client:
+                print("Connected successfully!")
+                print("Subscribing to data stream. Press Ctrl+C to stop.\n\n\n\n")
+
+                # On reconnect, reset state:
+                state.expected_counter = None
+                state.drop_counter = 0
+                state.last_sample = None
+
+                 # drain stale packets
+                while not packet_queue.empty():
+                    packet_queue.get_nowait()
+                
+                # Subscribe to notifications
+                await client.start_notify(CHARACTERISTIC_UUID, notification_handler)
+                
+                # Wait until user presses Ctrl+C or the device disconnects
+                stop_task = asyncio.create_task(stop_event.wait())
+                disc_task = asyncio.create_task(disconnected_event.wait())
+                done, pending = await asyncio.wait([stop_task, disc_task], return_when=asyncio.FIRST_COMPLETED)
+                for t in pending:
+                    t.cancel()
+                
+                # If we broke out because of Ctrl+C, stop notifying
+                if client.is_connected:
+                    await client.stop_notify(CHARACTERISTIC_UUID)
+
+                state.last_sample = None  # Clear display on disconnect
+
+    finally:
+        consumer.cancel()
+        display.cancel()
+
+
+
+# Run async loop
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n\n\nDisconnecting...")
+        stop_event.set()
+
+
+
+
+
+
+
+
+
+
+
+

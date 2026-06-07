@@ -1,0 +1,624 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+@2 .no_pop
+@3 .comp_ignore
+@4 .comp_variant_list
+@5 .placement_layer
+
+#
+#Component attribute text strings
+#
+&0 bottom_layer
+
+# CMP 0
+CMP 22 87.25000076 38.3850007 90 N D6 SD05T1G ;0=1,1=1.0620,5=0
+PRP ComponentLink1Description 'Manufacturer URL'
+PRP ComponentLink1URL 'http://www.onsemi.com/'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.onsemi.com/pub_link/Collateral/SD05T1-D.PDF'
+PRP ComponentLink3Description 'Package Specification'
+PRP ComponentLink3URL 'http://www.onsemi.com/pub_link/Collateral/SD05T1-D.PDF'
+PRP DatasheetVersion 'Rev. 2'
+PRP Direction 'Unidirectional'
+PRP IR_Max_(uA) '10'
+PRP Manufacturer 'On Semiconductor'
+PRP Mounting_Technology 'Surface Mount'
+PRP PackageDescription '2-Pin SOD, Body 1.7 x 1.25 mm'
+PRP PackageReference 'SOD-323-2-477-02_G'
+PRP PackageVersion 'Rev. G, 02/2005'
+PRP Packing 'Tape and Reel'
+PRP PartNumber 'SD05T1G'
+PRP PPK_Max_(W) '350'
+PRP RoHS 'Pb-Free'
+TOP 0 87.25000076 39.49999974 90 N 4 8 1
+TOP 1 87.25000076 37.27000166 90 N 46 198 2
+#
+# CMP 1
+CMP 12 90.00000034 38.2499997 90 N C49 4.7uF ;0=1,1=0.0000,5=0
+PRP Capacitance '4.7uF'
+PRP Case_Code_(Imperial) '0805'
+PRP Case_Code_(Metric) '2012'
+PRP Case/Package '0805'
+PRP Dielectric 'X7R'
+PRP Height '1.25mm'
+PRP Length '2mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Package_Quantity '10000'
+PRP Packaging 'Tape and Reel'
+PRP Termination 'SMD/SMT'
+PRP Tolerance '10%'
+PRP Voltage_Rating_(DC) '16V'
+PRP Weight '0.000335oz'
+PRP Width '1.25mm'
+TOP 0 90.00000034 39.17536488 90 N 4 7 1
+TOP 1 90.00000034 37.32463452 90 N 46 199 2
+#
+# CMP 2
+CMP 5 41.24999878 28.24999938 0 N R35 10k ;0=1,1=0.0000,5=0
+TOP 0 42.09999962 28.24999938 180 N 60 3 1
+TOP 1 40.39999794 28.24999938 180 N 46 203 2
+#
+# CMP 3
+CMP 5 41.24999878 26.25000084 0 N R34 10k ;0=1,1=0.0000,5=0
+TOP 0 42.09999962 26.25000084 180 N 61 4 1
+TOP 1 40.39999794 26.25000084 180 N 46 202 2
+#
+# CMP 4
+CMP 5 41.24999878 24.24999976 0 N R33 10k ;0=1,1=0.0000,5=0
+TOP 0 42.09999962 24.24999976 180 N 62 4 1
+TOP 1 40.39999794 24.24999976 180 N 46 210 2
+#
+# CMP 5
+CMP 5 41.24999878 22.25000122 0 N R32 10k ;0=1,1=0.0000,5=0
+TOP 0 42.09999962 22.25000122 180 N 63 4 1
+TOP 1 40.39999794 22.25000122 180 N 46 211 2
+#
+# CMP 6
+CMP 7 22.75000022 3.75000012 0 N C31 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 3.75000012 180 N 9 8 1
+TOP 1 22.15000142 3.75000012 180 N 46 207 2
+#
+# CMP 7
+CMP 7 22.75000022 9.49999878 0 N C30 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 9.49999878 180 N 42 7 1
+TOP 1 22.15000142 9.49999878 180 N 46 204 2
+#
+# CMP 8
+CMP 7 22.75000022 11.25000036 0 N C29 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 11.25000036 180 N 39 7 1
+TOP 1 22.15000142 11.25000036 180 N 46 209 2
+#
+# CMP 9
+CMP 7 22.75000022 13.75000044 0 N C28 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 13.75000044 180 N 40 7 1
+TOP 1 22.15000142 13.75000044 180 N 46 205 2
+#
+# CMP 10
+CMP 7 22.75000022 16.25000052 0 N C27 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 16.25000052 180 N 37 7 1
+TOP 1 22.15000142 16.25000052 180 N 46 206 2
+#
+# CMP 11
+CMP 7 22.75000022 18.7500006 0 N C26 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 18.7500006 180 N 38 7 1
+TOP 1 22.15000142 18.7500006 180 N 46 213 2
+#
+# CMP 12
+CMP 7 22.75000022 21.25000068 0 N C25 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 21.25000068 180 N 35 7 1
+TOP 1 22.15000142 21.25000068 180 N 46 214 2
+#
+# CMP 13
+CMP 7 22.75000022 23.75000076 0 N C24 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 23.75000076 180 N 36 7 1
+TOP 1 22.15000142 23.75000076 180 N 46 215 2
+#
+# CMP 14
+CMP 7 22.75000022 26.25000084 0 N C23 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 26.25000084 180 N 33 7 1
+TOP 1 22.15000142 26.25000084 180 N 46 212 2
+#
+# CMP 15
+CMP 7 22.75000022 28.75000092 0 N C22 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 28.75000092 180 N 34 7 1
+TOP 1 22.15000142 28.75000092 180 N 46 196 2
+#
+# CMP 16
+CMP 7 22.75000022 31.250001 0 N C21 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 31.250001 180 N 31 7 1
+TOP 1 22.15000142 31.250001 180 N 46 195 2
+#
+# CMP 17
+CMP 7 22.75000022 33.75000108 0 N C20 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 33.75000108 180 N 32 7 1
+TOP 1 22.15000142 33.75000108 180 N 46 197 2
+#
+# CMP 18
+CMP 7 22.75000022 36.25000116 0 N C19 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 36.25000116 180 N 29 7 1
+TOP 1 22.15000142 36.25000116 180 N 46 193 2
+#
+# CMP 19
+CMP 7 22.75000022 38.75000124 0 N C18 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 38.75000124 180 N 30 7 1
+TOP 1 22.15000142 38.75000124 180 N 46 192 2
+#
+# CMP 20
+CMP 7 22.75000022 41.24999878 0 N C17 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 41.24999878 180 N 27 7 1
+TOP 1 22.15000142 41.24999878 180 N 46 194 2
+#
+# CMP 21
+CMP 7 22.75000022 43.74999886 0 N C16 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 43.74999886 180 N 28 7 1
+TOP 1 22.15000142 43.74999886 180 N 46 201 2
+#
+# CMP 22
+CMP 7 22.75000022 7.74999974 0 N C15 1nF ;0=1,1=0.0000,5=0
+PRP Automotive 'Yes'
+PRP Automotive_Grade 'Grade 1'
+PRP Capacitance '1,000 pF'
+PRP Category 'Cap'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'https://api.kemet.com/component-edge/download/datasheet/C0603C100J5GACAUTO.pdf'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Capacitors'
+PRP Device_Class_L3 'Ceramic Capacitors'
+PRP Digikey_Description 'CAP CER 1000PF 50V 1% NP0 0603'
+PRP Height '0.87mm'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'KEMET'
+PRP Manufacturer_Part_Number 'C0603C102F5GACTU'
+PRP Material 'Ceramic'
+PRP Mouser_Description 'Cap Ceramic 0.001uF 50V C0G 1% SMD 0603 125°C Paper T/R'
+PRP Octopart 'https://octopart.com/c0603c102f5gactu-kemet-9139790'
+PRP Package 'C0603C-CF'
+PRP RoHS 'TRUE'
+PRP Temperature '-55°C to +125°C'
+PRP Temperature_Characteristic 'C0G'
+PRP Temperature_Coefficient '30ppm/°C'
+PRP Temperature_Range_High '+125°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.01'
+PRP Value '1,000 pF'
+PRP Voltage_Rating '50 V'
+TOP 0 23.34999902 7.74999974 180 N 41 7 1
+TOP 1 22.15000142 7.74999974 180 N 46 208 2
+#

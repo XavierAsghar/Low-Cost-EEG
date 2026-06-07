@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\xavie\Documents\University Work\Year 4\FYP\CAD\Atlium Project\ADS ESP EEG\ADS ESP EEG.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=ads esp eeg-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=ads esp eeg-slotholes.txt|DrillLayers=gtl,g1,g2,gbl
