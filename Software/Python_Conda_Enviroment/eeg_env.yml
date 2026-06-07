@@ -145,4 +145,3 @@ dependencies:
       - winrt-windows-foundation==3.2.1
       - winrt-windows-foundation-collections==3.2.1
       - winrt-windows-storage-streams==3.2.1
-prefix: C:\Users\xavie\anaconda3\envs\eeg_env

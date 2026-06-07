@@ -12,4 +12,3 @@ dependencies:
   - pyxdf
   - pygame
   - python-sounddevice
-prefix: C:\Users\xavie\anaconda3\envs\eeg_env
