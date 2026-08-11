@@ -1,5 +1,5 @@
 # Low-Cost-EEG
-As part of my Masters Project at University, I have created my own EEG module, with the goal of reducing the cost of EEG technology, and removing barriers to conducting BCI projects/reserach. 
+As part of my Masters Project at University, I have created my own EEG module, with the goal of reducing the cost of EEG technology, and removing barriers to conducting BCI projects/research. 
 The module has been verified through the successful detection of Alpha Waves, SSVEPs, and P300s. Additionally the module can also be used to measure other biopotentials, including EMG and ECG. The component cost of the module is £69.07 for 4-Channels, and £99.92 for 8-Channels.
 
 <img width="3072" height="2931" alt="conc 1" src="https://github.com/user-attachments/assets/7645f9a5-55a8-4bad-aab5-7679d47df7f0" />
